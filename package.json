@@ -1,0 +1,8 @@
+{
+"scripts": {
+  "build:css": "postcss src/tailwind.css -o dist/tailwind.css",
+  "minify:html": "html-minifier --collapse-whitespace --remove-comments --minify-css true --minify-js true --input-dir ./src --output-dir ./dist",
+  "build": "npm run build:css && npm run minify:html"
+}
+
+}
